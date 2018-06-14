@@ -93,6 +93,7 @@ footer .bottom ul{
   display: flex
 }
 footer .bottom ul li{
+  height:46px;
   width:24%;
   justify-content: space-between;
   // line-height:30px;
