@@ -31,6 +31,7 @@ module.exports = {
       'bootcss': 'bootstrap/dist/css/bootstrap.css',
       'swiper-css':'swiper/dist/css/swiper.css',
       'swiper-js':'swiper/dist/js/swiper.js',
+      'layui-css':"layui-src/dist/css/layui.css",
     }
   },
   module: {

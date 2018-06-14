@@ -69,7 +69,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      axios: 'axios'
+      axios: 'axios',
+     
     })
   ]
 })
