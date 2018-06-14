@@ -2,14 +2,13 @@
 			
 日期：2018-6-14
 今日完成工作：
-1、完成了
-2、完成了XXXXXXXXXXXXX
-3、完成了XXXXXXXXXXXXX	
+1、完成了项目的基本结构
+2、完成了配置了各种依赖，插件
+
 		
 明日工作计划：	
-1、完成XXXXXXXXXXXXX
-2、完成XXXXXXXXXXXXX
-3、完成XXXXXXXXXXXXX
+1、完成购物车页面
+
 
 备注：
 
