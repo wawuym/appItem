@@ -20,7 +20,7 @@
            <li class="detail">
              <h6>缤纷设计鲜花系列</h6>
              <p class="useFlower">爱情鲜花，周年纪念，求婚鲜花，生日鲜花</p>
-             <span class="price" >￥{{getPrices}}</span>
+             <span class="price">￥{{getPrices}}</span>
            </li>
 
              <div class="layui-btn-group layui-btn-size" v-if='!check'>
@@ -31,8 +31,8 @@
          </ul>    
        </div>
        <div class="layui-btn-container play">
-           <button class="layui-btn layui-btn-warm layui-btn-fluid">前往支付</button>
-        </div>
+           <router-link tag="button"  :to="{name:'ComputationCenter',params:{a:getPrices}}" class="layui-btn layui-btn-warm layui-btn-fluid">前往支付</router-link>
+        </div>       
     </div>
 
     
