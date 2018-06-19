@@ -4,7 +4,9 @@ import Home from '@page/home/Home'
 import Classify from '@page/classify/Classify'
 import Person from "@page/person/PersonCenter"
 import Shopping from "@page/shopping/ShoppingCar"
+
 import Login from "@page/person/Login"
+import ComputationCenter from "@page/computation/ComputationCenter"
 
 
 Vue.use(Router)
@@ -40,7 +42,11 @@ export default new Router({
       path:"/login",
       name:"Login",
       component:Login
-    }
+    },
+      path:"/computation",
+      name:"ComputationCenter",
+      component:ComputationCenter
+    },
   ],
   linkActiveClass: 'active',
   linkExactActiveClass: 'exact-active'

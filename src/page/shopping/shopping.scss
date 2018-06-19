@@ -21,6 +21,7 @@ table {
     line-height: 40px;
     text-align: right;
     color: #03689a;
+    cursor: pointer;
 }
 .flow-list{
     ul{
@@ -73,6 +74,9 @@ table {
        button{  
            width:30px;       
        }
+       input{
+         width:30px;      
+       }
     }
   
 }
@@ -91,9 +95,7 @@ table {
     span{
         display: block;
         width:25px;
-        height:100px;
-        
-       
+        height:100px;   
     }
     .yes{
         background: url("../../assets/yes.png") no-repeat center;    
@@ -101,4 +103,7 @@ table {
     .no{
         background: url("../../assets/no.png")no-repeat center;  
     }
+}
+.forbid{
+    cursor:not-allowed;  
 }

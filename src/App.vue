@@ -46,6 +46,8 @@ html,body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin: 0;
+ 
+  background:#f2f2f2;
 }
 #app{
   height:100%;
@@ -62,6 +64,7 @@ ul li{
   height:calc(100% - 116px);
   overflow-x: hidden;
   overflow-y: auto;
+  padding: 12px;
 }
 
 // 头部的样式
