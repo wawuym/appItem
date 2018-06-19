@@ -1,30 +1,82 @@
 <template>
   <div class="content">
     <h3 class="confirm">商品信息确认</h3>
-    <div>
-      <h3>价格信息</h3>
-      <p>商品总价：</p>
-      <p>{{getSumPrice}}</p>
-      <p>运送费：</p>
-      <h4>
-        订单总计
-      </h4>
+    <!-- 价格信息 -->
+    <div class='priceInfo'>
+      <h3 class="priceTitle">价格信息</h3>
+      <div class="pricePartenNode">
+         <p class="textLeft">商品总价：</p>
+         <p class="textRight">￥{{getSumPrice}}</p>
+      </div>
+     <div class="pricePartenNode">
+         <p class="textLeft">运送费：</p>
+         <p class="textRight">包邮</p>
+      </div>
+      <div class="pricePartenNode">
+         <p class="textLeft priceTitle">订单总计：</p>
+         <p class="textRight">30</p>
+      </div>
     </div>
-    <div>
-      <h3>收货信息</h3>
-      <p>收货地址：</p>
-      <p>收货人：</p>
-      <p>邮编</p>
-      <p>电话</p>
+    <!-- 收货信息 -->
+    <div class='priceInfo'>
+      <h3 class="priceTitle">收货信息</h3>
+      <div class="pricePartenNode">
+         <p class="textLeft">收货地址：</p>
+         <p class="textRight"></p>
+      </div>
+     <div class="pricePartenNode">
+         <p class="textLeft">收货人：</p>
+         <p class="textRight"></p>
+      </div>
+      <div class="pricePartenNode">
+         <p class="textLeft ">邮编：</p>
+         <p class="textRight"></p>
+      </div>
+      <div class="pricePartenNode">
+         <p class="textLeft ">电话：</p>
+         <p class="textRight"></p>
+      </div>
+       <div class="pricePartenNode address">
+         <p class="textLeft ">修改地址：</p>
+         <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+      </div>
+       <div class="pricePartenNode address">
+         <p class="textLeft ">新增地址：</p>
+         <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+      </div>
     </div>
+
+      <h3 class="confirm">选择支付方式</h3>
+    <div class='priceInfo play'>
+         <div class="pricePartenNode address">
+            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 微信支付：</p>
+            <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+        </div>
+        <div class="pricePartenNode address">
+            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 支付宝支付：</p>
+            <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+        </div>
+        <div class="pricePartenNode address">
+            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 银行卡：</p>
+            <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+        </div>
+        <div class="pricePartenNode address">
+            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 信用卡：</p>
+            <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+        </div>
+        <div class="pricePartenNode address">
+            <p class="textLeft "><i class="layui-icon">&#xe677;</i> VISA：</p>
+            <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+        </div>
+      </div>
   </div>
+  
+
 </template>
 
 <script src='./computation.js'/>
 
 
 <style lang="scss" scoped >
-
 @import "./computation.scss";
-
 </style>
