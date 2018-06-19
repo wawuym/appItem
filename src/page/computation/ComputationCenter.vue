@@ -19,6 +19,7 @@
     </div>
     <!-- 收货信息 -->
     <div class='priceInfo addressInfo'>
+
       <h3 class="priceTitle">收货信息</h3>
       <div class="pricePartenNode">
          <p class="textLeft">收货地址：</p>
@@ -35,6 +36,15 @@
       <div class="pricePartenNode">
          <p class="textLeft ">电话：</p>
          <p class="textRight"></p>
+      </div>
+       <div class="pricePartenNode address">
+         <p class="textLeft ">修改地址：</p>
+         <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+      </div>
+       <div class="pricePartenNode address">
+         <p class="textLeft ">新增地址：</p>
+         <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
+      </div>
       </div>   
        <div class="pricePartenNode txtaddress">
          <p class="textLeft ">修改地址：</p>
@@ -70,7 +80,7 @@
         </div>
       </div>
   </div>
- 
+
 
 </template>
 
