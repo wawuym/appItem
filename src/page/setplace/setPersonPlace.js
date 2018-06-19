@@ -1,5 +1,5 @@
 export default {
-    name: 'address',
+    name: 'setplace',
     data () {
       return {
        

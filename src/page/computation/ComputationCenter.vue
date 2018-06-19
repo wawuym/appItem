@@ -35,15 +35,15 @@
       <div class="pricePartenNode">
          <p class="textLeft ">电话：</p>
          <p class="textRight"></p>
-      </div>
-       <div class="pricePartenNode address">
+      </div>   
+       <div class="pricePartenNode txtaddress">
          <p class="textLeft ">修改地址：</p>
          <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
       </div>
-       <div class="pricePartenNode address">
+      <router-link tag='div' to="./Setplace" exact class="pricePartenNode txtaddress">
          <p class="textLeft ">新增地址：</p>
          <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
-      </div>
+      </router-link>   
     </div>
 
       <h3 class="confirm">选择支付方式</h3>
@@ -70,7 +70,7 @@
         </div>
       </div>
   </div>
-  
+ 
 
 </template>
 
