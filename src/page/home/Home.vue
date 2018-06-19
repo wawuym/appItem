@@ -7,8 +7,8 @@
 </template>
 
 <script>
-  import Carousel from '../home/Carousel'
-  import Matter from '../home/Matter'
+  import Carousel from './Carousel'
+  import Matter from './Matter'
 
 export default {
   name: 'home',
