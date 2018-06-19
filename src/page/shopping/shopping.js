@@ -4,18 +4,41 @@ export default {
         return {
             //判断购物车里面是否有东西
             status:false,
-            //单选和复选框的状态
+            //单选和复选框、加减按钮状态
             check:false,
-            //加减按钮状态
-            jisun:true
+            checkMe:true,
+            edit:'编辑',
+            count:1,
+            getPrice:199,
+            yes:false
         };
     },
     methods:{
-        edit(){
-            this.check=true;
-            this.jisun=false;
+        edits(){
+            this.edit=='编辑'?this.edit='完成':this.edit='编辑'
+            this.edit=='编辑'?this.check=false:this.check=true;
+            this.edit=='编辑'?this.checkMe=false:this.checkMe=true;
         },
-        
+        desc(){
+            if(this.count==1){
+                    this.yes=true;                 
+            }else{               
+                this.count--;
+            }           
+        },
+        add(){
+            this.yes=false;
+            this.count++;
+        },
+        changeClir(){
+            this.checkMe=!this.checkMe;
+        }   
     },
+    computed:{        
+        getPrices:function(){
+            return this.count*this.getPrice;
+        },
+       
+    }
     
 };
