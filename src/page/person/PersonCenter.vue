@@ -55,5 +55,6 @@ export default {
     .personal{
         i {float: right;}
     }
+    button{margin-bottom: 20px;border-radius: 20px;}
 }
 </style>
