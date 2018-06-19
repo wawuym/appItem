@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data(){
@@ -30,7 +29,6 @@ export default {
       navIem:["首页","分类","购物车","wo"]
     }
   },
-  
 }
 </script>
 
