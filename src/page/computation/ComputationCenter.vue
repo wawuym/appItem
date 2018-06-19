@@ -18,7 +18,7 @@
       </div>
     </div>
     <!-- 收货信息 -->
-    <div class='priceInfo'>
+    <div class='priceInfo addressInfo'>
       <h3 class="priceTitle">收货信息</h3>
       <div class="pricePartenNode">
          <p class="textLeft">收货地址：</p>
