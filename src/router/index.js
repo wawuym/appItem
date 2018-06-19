@@ -10,6 +10,7 @@ import ComputationCenter from "@page/computation/ComputationCenter"
 import Setplace from "@page/setplace/Setplace"
 
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -49,6 +50,7 @@ export default new Router({
       name:"ComputationCenter",
       component:ComputationCenter
     },
+
     {
       path:"/setplace",
       name:"setplace",

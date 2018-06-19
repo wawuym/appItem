@@ -1,14 +1,14 @@
 <template>
   <div class="content">
     <!-- <p>我是home 轮播图</p> -->
-    <!-- <axios></axios> -->
+    <carousel></carousel>
     <matter :dataJson = dataJson ></matter>
   </div>
 </template>
 
 <script>
-  import Axios from '../axios/axios'
-  import Matter from '../home/Matter'
+  import Carousel from './Carousel'
+  import Matter from './Matter'
 
 export default {
   name: 'home',
@@ -33,7 +33,7 @@ export default {
 
   //计算 函数 里面写 传入的组件名
   components:{
-    Axios,
+    Carousel,
     Matter
   },
 
