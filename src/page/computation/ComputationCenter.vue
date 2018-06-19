@@ -49,23 +49,23 @@
       <h3 class="confirm">选择支付方式</h3>
     <div class='priceInfo play'>
          <div class="pricePartenNode address">
-            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 微信支付：</p>
+            <p class="textLeft "><img src="../../assets/weixin.png" alt="" class="palTool"> <span>微信支付</span></p>
             <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
         </div>
         <div class="pricePartenNode address">
-            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 支付宝支付：</p>
+            <p class="textLeft "><img src="../../assets/zhifubao.png" alt="" class="palTool"> <span>支付宝支付</span></p>
             <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
         </div>
         <div class="pricePartenNode address">
-            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 银行卡：</p>
+            <p class="textLeft "><img src="../../assets/yinhangka.png" alt="" class="palTool"> <span>银行卡</span></p>
             <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
         </div>
         <div class="pricePartenNode address">
-            <p class="textLeft "><i class="layui-icon">&#xe677;</i> 信用卡：</p>
+            <p class="textLeft "><img src="../../assets/xingyongka.png" alt="" class="palTool"> <span>信用卡</span></p>
             <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
         </div>
         <div class="pricePartenNode address">
-            <p class="textLeft "><i class="layui-icon">&#xe677;</i> VISA：</p>
+            <p class="textLeft "><img src="../../assets/visa.png" alt="" class="palTool"><span>VISA</span></p>
             <p class="textRight"><i class="layui-icon">&#xe602;</i>  </p>
         </div>
       </div>
