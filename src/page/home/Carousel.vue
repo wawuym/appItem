@@ -13,9 +13,6 @@
             <div class="swiper-slide">
                 <img src="../../assets/carousel/carousel4.jpg">
             </div>
-            <div class="swiper-slide">
-                <img src="../../assets/carousel/carousel3.jpg">
-            </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
