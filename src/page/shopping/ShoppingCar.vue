@@ -11,16 +11,16 @@
     <div v-else>
        <div class="edit"><span  @click="edits">{{edit}}</span></div>
        <div class="flow-list">
-         <ul>
+         <ul v-for='getFlower in trolleys' :key='getFlower.id'>
            <li class="check" v-if='check'>   
               <span class="no" v-if='checkMe' @click="changeClir"></span>           
               <span class="yes" v-else></span>
            </li>
-           <li class="pic"><img src="https://www.amflower.com/images/flowers/62741-big.jpg" alt=""></li>
+           <li class="pic"><img :src="getFlower.photo"></li>
            <li class="detail">
-             <h6>缤纷设计鲜花系列</h6>
-             <p class="useFlower">爱情鲜花，周年纪念，求婚鲜花，生日鲜花</p>
-             <span class="price">￥{{getPrices}}</span>
+             <h6>{{getFlower.name}}</h6>
+             <p class="useFlower">{{getFlower.details.flowerSweper}}</p>
+             <span class="price">￥{{getFlower.price}}</span>
            </li>
 
              <div class="layui-btn-group layui-btn-size" v-if='!check'>

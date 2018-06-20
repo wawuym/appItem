@@ -10,14 +10,23 @@ export default {
             edit:'编辑',
             count:1,
             getPrice:199,
-            yes:false
+            yes:false,
+            trolleys:[]
         };
+    },
+    mounted:function(){
+        this.trolleys=localStorage.getItem("trolley");
+        this.trolleys=JSON.parse(this.trolleys);
+        if(this.trolleys==null){
+            this.status=true;
+        }
     },
     methods:{
         edits(){
             this.edit=='编辑'?this.edit='完成':this.edit='编辑'
             this.edit=='编辑'?this.check=false:this.check=true;
             this.edit=='编辑'?this.checkMe=false:this.checkMe=true;
+         
         },
         desc(){
             if(this.count==1){

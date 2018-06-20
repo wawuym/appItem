@@ -5,8 +5,11 @@ import Classify from '@page/classify/Classify'
 import Person from "@page/person/PersonCenter"
 import Shopping from "@page/shopping/ShoppingCar"
 
-import Login from "@page/person/Login"
+import Login from "@page/login/Login"
 import ComputationCenter from "@page/computation/ComputationCenter"
+
+import PersonalData from "@page/PersonalData/PersonalData"
+
 import Setplace from "@page/setplace/Setplace"
 
 
@@ -52,9 +55,16 @@ export default new Router({
     },
 
     {
+      path:"/personalData",
+      name:"PersonalData",
+      component:PersonalData
+    },
+
+    {
       path:"/setplace",
       name:"setplace",
       component:Setplace
+
     },
   ],
   linkActiveClass: 'active',

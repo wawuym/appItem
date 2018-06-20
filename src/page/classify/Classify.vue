@@ -1,6 +1,9 @@
 <template>
   <div class="content">
+<<<<<<< HEAD
     <!-- 分类的 页面 -->
+=======
+>>>>>>> 8ca0f3c797ad7536835a751d53e711c4afc4b799
       <div class="classifyTop">
         <i class="layui-icon">&#xe615;</i>
         <input type="text" placeholder="请输入搜索的内容">
@@ -18,6 +21,7 @@
      </div>
       </li>
       </ul>
+<<<<<<< HEAD
 
       <!-- 通过 上面  li 的点击事件 传入 cont 的值。 -->
       <div class="detail" v-if = "delet">
@@ -44,6 +48,8 @@
 
 
 
+=======
+>>>>>>> 8ca0f3c797ad7536835a751d53e711c4afc4b799
   </div>
 </template>
 
