@@ -15,7 +15,7 @@
                         <i class="layui-icon">&#xe602;</i>
                     </td>
                 </router-link>
-                <router-link tag='tr'>
+                <router-link tag='tr' to="./Setplace">
                     <td>设置收货地址
                         <i class="layui-icon">&#xe602;</i>
                     </td>
