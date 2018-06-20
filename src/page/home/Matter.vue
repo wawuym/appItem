@@ -1,23 +1,14 @@
 <template>
   <div class="matter">
-
-
-      <ul v-for="(data,index) in dataJson" :key="data.id">
+      <ul v-for="(dataInfo,index) in dataJson" :key="dataInfo.id">
         <h1>{{title[index]}}</h1>
-      <li v-for="da in data" :key="da.id">
-      <img :src="da.photo" alt="他大爷">
-      <h2>{{da.name}}</h2>
-      <p>￥{{da.price}}</p>
+        <!-- 点击事件 detail （ v-for  里面的 data ） -->
+      <li v-on:click = "detail(data)"  v-for="data in dataInfo" :key="data.id">
+      <img :src="data.photo" alt="他大爷">
+      <h2>{{data.name}}</h2>
+      <p>￥{{data.price}}</p>
       </li>
       </ul>
-     
-
-    
-
-
-
-
-
   </div>
 </template>
 
@@ -36,11 +27,11 @@ export default {
     },
   },
   methods:{
-    MatterData(){
-      this.data = dataJson;
-      console.log("我是 matter 里面 答应 的" + this.data);
-      console.log(dataJson);
-    },
+    //传入 v-for 循环的 data , 谁点 就是  那个 data 数据
+    detail(data){
+      //将子页面 的 data数组中 details 数据 传给 父级
+      this.$emit("chang",data)
+    }
   }
 }
 </script>
@@ -56,12 +47,12 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-     h1{
-       width:100%;
+  h1{
+    width:100%;
     font-size: 23px;
     font-weight: bold;
     letter-spacing: 2px;
-    margin:15px 0 5px 0;
+    margin:25px 0 5px 0;
   }
     li{
       width: 47%;
