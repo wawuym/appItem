@@ -13,6 +13,12 @@
 </template>
 
 <script>
+
+// 实现 切换的效果
+
+
+
+
 export default {
   name: 'cut',
     // 新闻滚动
