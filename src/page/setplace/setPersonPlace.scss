@@ -1,0 +1,32 @@
+.fillForm{
+    background: white;
+    border-bottom: 1px solid #c0c0c0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height:50px;
+    line-height: 50px;
+    select{
+        height:35px;
+    }
+    .personName{
+        width: 75%;
+        height:40px;       
+        border: none;
+        box-sizing: border-box;
+        padding-left: 17px;
+      
+    }
+    .txtName{
+        box-sizing: border-box;
+        padding-left: 44px;
+    }
+}
+.selectAddress{
+    box-sizing: border-box;
+}
+.makeSure{
+    margin-top: 35px;
+    button{
+        height:45px;
+    }
+}

@@ -34,20 +34,40 @@
             margin-bottom: 12px;
             color: black;
         }
-        .address{
+
+        .txtaddress{
+
             .textLeft{
                  color:black;
             }
             box-sizing: border-box;
             margin:0px;
+
             padding: 8px;
             border-top:1px solid #cfcfcf; 
         }
     }
+
+    //         padding: 15px;
+    //         border-top:1px solid #cfcfcf; 
+    //     }
+    // }
+    .addressInfo{
+        padding-bottom: 0px;
+    }
+
     .play{
         padding: 0px;
         border-top:none;
         margin-bottom: 40px;
+        span{
+            padding-left: 15px;
+        }
+        .palTool{
+            width:30px;
+            height:25px;
+            box-sizing: border-box;
+        }
     }
 }
 

@@ -41,7 +41,9 @@ export default {
             navIem: ["首页", "分类", "购物车", "wo"]
         };
     }
+
 };
+
 </script>
 
 <style lang="scss">

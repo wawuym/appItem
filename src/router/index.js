@@ -7,7 +7,11 @@ import Shopping from "@page/shopping/ShoppingCar"
 
 import Login from "@page/login/Login"
 import ComputationCenter from "@page/computation/ComputationCenter"
+
 import PersonalData from "@page/PersonalData/PersonalData"
+
+import Setplace from "@page/setplace/Setplace"
+
 
 
 Vue.use(Router)
@@ -49,10 +53,18 @@ export default new Router({
       name:"ComputationCenter",
       component:ComputationCenter
     },
+
     {
       path:"/personalData",
       name:"PersonalData",
       component:PersonalData
+    },
+
+    {
+      path:"/setplace",
+      name:"setplace",
+      component:Setplace
+
     },
   ],
   linkActiveClass: 'active',
