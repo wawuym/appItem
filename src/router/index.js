@@ -5,8 +5,9 @@ import Classify from '@page/classify/Classify'
 import Person from "@page/person/PersonCenter"
 import Shopping from "@page/shopping/ShoppingCar"
 
-import Login from "@page/person/Login"
+import Login from "@page/login/Login"
 import ComputationCenter from "@page/computation/ComputationCenter"
+import PersonalData from "@page/PersonalData/PersonalData"
 
 
 Vue.use(Router)
@@ -43,9 +44,15 @@ export default new Router({
       name:"Login",
       component:Login
     },
+    {
       path:"/computation",
       name:"ComputationCenter",
       component:ComputationCenter
+    },
+    {
+      path:"/personalData",
+      name:"PersonalData",
+      component:PersonalData
     },
   ],
   linkActiveClass: 'active',
