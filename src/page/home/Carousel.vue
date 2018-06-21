@@ -23,6 +23,7 @@
 </template>
 
 <script>
+// 轮播图引入的 外部插件
 import "swiper-css";
 import Swiper from "swiper-js";
 

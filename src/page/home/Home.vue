@@ -2,8 +2,11 @@
   <div class="content">
     <!-- <p>我是home 轮播图</p> -->
     <carousel></carousel>
+    <!-- 头部点击切换的组件  -->
     <cut></cut>
+    <!-- upchang($event)  接受 从子级 matter 里面 传过来的 点击 事件 v-fro 那个的data数据 -->
     <matter v-on:chang = "upchang($event)" :dataJson = dataJson ></matter>
+    <!-- 详情页面的代码  -->
     <div class="detail" v-if = "delet">
       <div id="dele" v-on:click = "dele">x</div>
       <div class="cont-title">
@@ -36,7 +39,7 @@ export default {
   //数据
   data () {
     return {
-     dataJson:[],
+     dataJson:["safasfas"],
      delet:false,
      detail:"",
      cont:"wrt",
@@ -56,6 +59,8 @@ export default {
   },
 
  methods:{
+   //从子页面 传入 过来 v-for 里面 的 data =（title） 数据 
+   //将数据 赋值 给 父页面 的值，在调取使用
     upchang(title){
       this.delet = true;
       this.cont = title;
@@ -71,9 +76,10 @@ export default {
     add(){
         this.carts = localStorage.getItem("trolley");   
         if(!this.carts){							      //如果carts 为空的话，返回一个空数组
-            this.carts = [];
+            this.carts = []; 
         }else{
             this.carts = JSON.parse(this.carts);                        //else 就解析 json 文件
+            alert("添加购物车成功")
             }
         this.carts.push(this.cont);						// 将 对象data 存入一个 carts
         localStorage.setItem("trolley", JSON.stringify(this.carts));      
@@ -89,8 +95,6 @@ export default {
     Matter,
     Cut
   },
-
- 
 }
 </script>
 
@@ -98,6 +102,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped >
 .content{
+  // 详情的样式
   .detail{
     position: fixed;
     top: 50px;
