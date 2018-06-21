@@ -27,16 +27,16 @@ export default {
             animate: false,
             items: [
                 //消息列表对应的数组
-                { name: "双12全场坚果低至6折，更有隐藏神秘惊喜" },
-                { name: "坚果最新上线啦" },
-                { name: "好礼无限送" }
+                { name: "5.21-6.21 聪明活泼双子座 生日鲜花" },
+                { name: "送给青春的我们" },
+                { name: "你的心意一定会让她开心" }
             ],
             userInfo: {},
             myProduct: []
         }
     },
     created() {
-        setInterval(this.scroll, 1500); // 在钩子函数中调用我在method 里面写的scroll()方法，注意此处不要忘记加this,我在这个位置掉了好几次坑，都是因为忘记写this。
+        setInterval(this.scroll, 2000); // 在钩子函数中调用我在method 里面写的scroll()方法，注意此处不要忘记加this,我在这个位置掉了好几次坑，都是因为忘记写this。
         this.getdata();
     },
     methods: {

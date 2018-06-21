@@ -11,8 +11,8 @@
             <div class="bottom">
                 <ul>
                     <router-link tag="li" to="/home" exact>
-                        <i class="layui-icon layui-size">&#xe68e;</i>
-                        <p>首页</p>
+                        <i class="layui-icon layui-size red">&#xe68e;</i>
+                        <p class="red">首页</p>
                     </router-link>
                     <router-link tag="li" to="/classify">
                         <i class="layui-icon layui-size">&#xe857;</i>
@@ -76,7 +76,9 @@ ul li {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
+.red{
+    color: red;
+}
 // 头部的样式
 header {
     height: 50px;

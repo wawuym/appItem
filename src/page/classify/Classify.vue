@@ -205,13 +205,13 @@ li{
       }
     }
     .title-right{
-      width: 46%;
+      width: 50%;
      float: right;
       h2{
         height: 50px;
         line-height: 50px;
         margin-top: 40px;
-        font-size: 23px;
+        font-size: 21px;
       }
       p{
         color: red;
